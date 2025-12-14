@@ -2,6 +2,9 @@
 *.log
 
 # Inventory outputs (generated artifacts)
+Inventario-Windows11-20*
+
+# Inventory outputs (generated artifacts)
 Inventario-*
 *.csv
 *.json
