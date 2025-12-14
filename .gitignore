@@ -1,0 +1,16 @@
+# PowerShell
+*.log
+
+# Inventory outputs (generated artifacts)
+Inventario-*
+*.csv
+*.json
+SUMMARY.txt
+EXEC_SUMMARY.md
+TOP_*.csv
+ACTIONS_*.csv
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
