@@ -37,3 +37,24 @@ inventario-windows11-grc/
 │   └── Report-Inventario-W11.ps1      # Executive analysis and prioritization
 ├── README.md
 └── .gitignore
+
+---
+
+## How it works (high level)
+
+1. **Data collection**
+   - `Inventario-Windows11-GRC.ps1` runs locally on a Windows 11 endpoint
+   - Collects applications, services, tasks and startup artifacts
+   - Generates structured CSV files and a consolidated JSON
+
+2. **Executive analysis**
+   - `Report-Inventario-W11.ps1` consumes the generated inventory folder
+   - Applies heuristics to identify persistence, consumption and governance gaps
+   - Produces executive-ready outputs:
+     - Executive summary (Markdown)
+     - Prioritized CSVs for decision making
+
+3. **Human decision layer**
+   - The tool does **not** remove or disable anything automatically
+   - Final decisions are always human-driven (KEEP / REVIEW / REMOVE)
+
